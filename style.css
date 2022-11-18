@@ -11,7 +11,9 @@
     --primary-color: hsla(var(--base-color), 6%, 21%, 1);
 
     --bg-primary-card-color: hsla(var(--base-color), 9%, 89%, 1);
-    --bg-selected-card-color: hsla(194, 97%, 31%, 1) font-size: 62.5%;
+    --bg-selected-card-color: hsla(194, 97%, 31%, 1);
+
+    font-size: 62.5%;
 }
 
 body {
@@ -74,4 +76,28 @@ main {
 
 .controls-timer button svg {
     width: 4.8rem;
+}
+
+.content-sounds {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+}
+
+.card {
+    background: var(--bg-primary-card-color);
+    border-radius: 2.4rem;
+    padding: 4.8rem 4.7rem;
+
+    transition: background .3s;
+}
+
+.card.selected {
+    background: var(--bg-selected-card-color);
+
+    transform: background;
+}
+
+.card.selected svg path {
+    fill: white;
 }
