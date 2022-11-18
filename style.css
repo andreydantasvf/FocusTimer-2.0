@@ -94,8 +94,6 @@ main {
 
 .card.selected {
     background: var(--bg-selected-card-color);
-
-    transform: background;
 }
 
 .card.selected svg path {
