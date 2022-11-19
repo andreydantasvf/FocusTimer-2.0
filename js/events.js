@@ -11,6 +11,8 @@ import {
     buttonSoundRain,
     buttonSoundCoffeeShop,
     buttonSoundFireplace,
+    buttonDarkMode,
+    buttonLightMode
 } from "./elements.js"
 
 export default function ({ controls, timer, sound }) {
@@ -97,5 +99,19 @@ export default function ({ controls, timer, sound }) {
         const lareiraSound = "../assets/Lareira.wav"
         controls.soundFireplace()
         sound.changeSound(lareiraSound)
+    })
+
+    buttonLightMode.addEventListener('click', () => {
+        buttonDarkMode.classList.remove('hide')
+        buttonLightMode.classList.add('hide')
+
+        document.querySelector('body').classList.add('dark')
+    })
+
+    buttonDarkMode.addEventListener('click', () => {
+        buttonDarkMode.classList.add('hide')
+        buttonLightMode.classList.remove('hide')
+
+        document.querySelector('body').classList.remove('dark')
     })
 }
