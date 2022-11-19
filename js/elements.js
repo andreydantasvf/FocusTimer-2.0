@@ -10,6 +10,9 @@ const buttonSoundRain = document.querySelector('button#rain-sound')
 const buttonSoundCoffeeShop = document.querySelector('button#coffeeShop-sound')
 const buttonSoundFireplace = document.querySelector('button#fireplace-sound')
 
+const buttonLightMode = document.querySelector('button.light-mode')
+const buttonDarkMode = document.querySelector('button.dark-mode')
+
 const minutesDisplay = document.querySelector('.minutes')
 const secondsDisplay = document.querySelector('.seconds')
 
@@ -25,5 +28,7 @@ export {
     buttonSoundForest,
     buttonSoundRain,
     buttonSoundCoffeeShop,
-    buttonSoundFireplace
+    buttonSoundFireplace,
+    buttonLightMode,
+    buttonDarkMode
 }
