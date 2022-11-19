@@ -28,6 +28,8 @@ body {
     justify-content: center;
 
     position: relative;
+
+    transition: background .3s;
 }
 
 button {
@@ -43,6 +45,14 @@ button svg path {
 
 .hide {
     display: none;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 3.2rem 4rem 0 0;
 }
 
 main {
